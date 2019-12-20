@@ -28,3 +28,4 @@ line_simple(katz_deli)
 #[:foo, :bar, :baz].each.with_index(1) do |value, index|
 #    puts "#{index}: #{value}"
 #end
+
