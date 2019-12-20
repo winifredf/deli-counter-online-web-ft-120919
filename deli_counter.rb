@@ -35,3 +35,5 @@ def take_a_number(line, new_person)
 end
 
 take_a_number(katz_deli, "Fyvish")
+
+
