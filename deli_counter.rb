@@ -1,3 +1,5 @@
+katz_deli = []
+
 def line(array) # this was the one I figured out
   if array.length >= 1
     new_array = []
