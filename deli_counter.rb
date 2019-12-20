@@ -14,14 +14,17 @@ end
 
 line(katz_deli)
 
-def take_a_number(array, name)
-  array.push(name)
-  puts "Welcome, #{name}. You are number #{array.index(name)+1} in line."
-end
-
-def line(array)
-  if array.length == 0
-    puts "The line is currently empty."
-  else
-    phrase = "The line is currently:"
-end
+def line_simple(array) # this one follows the same mechanics as learn.co
+  current_line = "The simple line is currently:"
+  array.each.with_index(1) do |value, indexemus|  
+  # "each.with_index" is the method...must use "index"
+    current_line << " #{indexemus}. #{value},"    
+    # "indexemus" is used to illustrate this variable can be different from "index"
+  end 
+  puts current_line
+end 
+  
+line_simple(katz_deli)  
+#[:foo, :bar, :baz].each.with_index(1) do |value, index|
+#    puts "#{index}: #{value}"
+#end
